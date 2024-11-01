@@ -13,7 +13,7 @@ const errorHandler = (err, req, res, next) => {
 
   // log error stack trace to the console if not in production --> for debugging
   if (process.env.NODE_ENV !== "production") {
-    //console.log(err);
+    console.log(err);
   }
 
   res.json({
